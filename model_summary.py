@@ -20,10 +20,11 @@ class TextSummary:
         """        
         # Arguments to send the API
         kwargs = {
-            "model":"text-davinci-002",
-            "prompt":"Please summarize the following text:"+ input_text, 
+            "model":"text-davinci-003",
+            #prompt":input("Summary: "),
+            "prompt":input_text, 
             "temperature":0.7, 
-            "max_tokens":256,
+            "max_tokens":64,
             "top_p":1.0, 
             "frequency_penalty":0.0, 
             "presence_penalty":0.0
@@ -45,8 +46,5 @@ class TextSummary:
         set_openai_key(api_key)
         output = self.summarize(summary.format(input = input))
         return output
-
-
-
 
 
