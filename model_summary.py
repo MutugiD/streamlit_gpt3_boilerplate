@@ -20,17 +20,17 @@ class TextSummary:
         """        
         # Arguments to send the API
         kwargs = {
-            "model":"text-davinci-003",
+            "model":"text-babbage-001",
             #prompt":input("Summary: "),
             "prompt":input_text, 
             "temperature":0.9, 
-            "max_tokens":64,
+            "max_tokens":256,
             "top_p":1.0, 
             "frequency_penalty":0.0, 
-            "presence_penalty":0.0
-            
+            "presence_penalty":0.0,
+            "stop": ["."]
         }
-    
+
         # update the arguments
         for kwarg in myKwargs:
             kwargs[kwarg] = myKwargs[kwarg]
