@@ -23,7 +23,7 @@ class TextSummary:
             "model":"text-davinci-003",
             #prompt":input("Summary: "),
             "prompt":input_text, 
-            "temperature":0.7, 
+            "temperature":0.9, 
             "max_tokens":64,
             "top_p":1.0, 
             "frequency_penalty":0.0, 

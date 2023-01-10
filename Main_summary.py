@@ -26,7 +26,7 @@ def app():
         input = st.text_area(
             "Input your own text in English",
             #value=s_example,
-            max_chars=100,
+            max_chars=300,
             height=100,
         )
 
