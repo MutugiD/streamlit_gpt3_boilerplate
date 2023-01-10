@@ -1,5 +1,5 @@
-# GPT-3 Streamlit boilerplate
-
+# GPT-3 Streamlit boilerplate for text summary
+  
 - create virtual environment https://docs.python.org/3/library/venv.html
 - Activate virtual environment: `./venv/Scripts/activate`
 (Windows has issues with virtual env with Streamlit)
