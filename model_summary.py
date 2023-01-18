@@ -21,7 +21,6 @@ class TextSummary:
         # Arguments to send the API
         kwargs = {
             "model":"text-babbage-001",
-            #prompt":input("Summary: "),
             "prompt":input_text, 
             "temperature":0.9, 
             "max_tokens":256,
