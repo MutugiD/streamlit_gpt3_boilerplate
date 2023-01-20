@@ -1,5 +1,5 @@
-__pycache__
-venv
-.history
-.streamlit
-.idea
+# .gitignore
+...
+.streamlit/secrets.toml
+...
+

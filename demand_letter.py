@@ -1,8 +1,11 @@
+#https://beta.openai.com/docs/guides/embeddings/what-are-embeddings
+
 import openai
 import streamlit as st
 
 # st.secrets["pass"] is accessing the value of the "pass" secret.
-openai.api_key = st.secrets["pass"]
+openai.api_key = st.secrets["api"]
+
 st.header("Demand Letter Creator")
 # Create Text Area Widget to enable user to enter texts
 text = st.text_area("Enter instructions here")
